@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+body {
+    background-image: url('images/colorful-paper-shopping-bags-on-blue-surface.jpg');
+    background-size: cover;
+    background-repeat:space;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header {
+    height: 100px;
+    /* position: sticky; */
+    /* top: 0; */
+    /* z-index: 1; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+}
+
+.cart span {
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin-left: 5px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: rgb(244, 81, 81);
+}
+
+
+nav {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    /* background-color: rgba(40, 161, 195, 0.9); */
+    background-image: url('images/302441746228211.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+
+h2 a {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+h2 a:visited {
+    color: black;
+}
+
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav li span {
+    padding-left: 5px;
+}
+
+li a {
+    padding: 5px;
+    color: white;
+    background-color: #000;
+    text-decoration: none;;
+    height: 50px;
+}
+
+
+
+.cart ion-icon {
+   vertical-align: bottom;
+   font-size: 20px;
+   padding-right: 5px;
+}
+
+.cart a {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.container,
+.container-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: 50px; */
+    padding-bottom: 50px;;
+}
+
+.image:hover .add-cart{
+    display: block;
+}
+
+.image {
+    position: relative;
+    margin: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+.image img {
+    width: 250px;
+}
+
+
+.add-cart {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+/* @media(max-width: 500px) {
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;;
+    }
+
+    .sm-hide {
+        display: none;;
+    }
+
+    .products,
+    .product-header {
+        justify-content: center;
+    }
+
+    .basketTotalContainer {
+        padding-right: 8%;
+    }
+} */
+
